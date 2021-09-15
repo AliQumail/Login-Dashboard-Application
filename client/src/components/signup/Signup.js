@@ -30,7 +30,7 @@ export default function Signup() {
        password:password,
        age:age, 
        homeAddress:homeAddress,
-       currentAddress,
+       currentAddress:currentAddress,
        gender:gender,
        nationality:nationality
        
