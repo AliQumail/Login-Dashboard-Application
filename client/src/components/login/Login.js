@@ -3,6 +3,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Axios from "axios";
 import "./Login.css";
+import {Link} from "react-router-dom"
 
 export default function Login() {
   const [username, setUsername] = useState("");
@@ -46,6 +47,7 @@ export default function Login() {
           Login
         </Button>
       </Form>
+      Don't have an account. <Link to="/signup">Sign Up</Link> now!
     </div>
   );
 }
