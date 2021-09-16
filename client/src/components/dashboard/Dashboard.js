@@ -1,6 +1,14 @@
 import { Container, Row, Col } from "react-bootstrap";
 import "./Dashboard.css";
-
+/*
+const about  =Axios.create({
+  baseURL:"http://localhost:3001/",
+  headers:{
+    Authorization:`Bearer ${localStorage.getItem('token')}`
+  }
+});
+*/
+//Use 'Log' to call api which is modified version of axios obj.
 const Dashboard = () => {
   return (
     <Container className="">
