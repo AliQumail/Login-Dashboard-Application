@@ -4,6 +4,9 @@ import Button from "react-bootstrap/Button";
 import Axios from "axios";
 import "./Signup.css";
 
+const Sign  =Axios.create({
+  baseURL:"http://localhost:3001/"
+});
 export default function Signup() {
   const [firstname,setFirstname] = useState("");
   const [lastname,setLastname] = useState("");
@@ -15,14 +18,12 @@ export default function Signup() {
   const [currentAddress,setCurrentAddress] = useState("");
   const [gender,setGender] = useState("");
   const [nationality,setNationality] = useState("");
-
   function validateForm() {
     return username.length > 0 && password.length > 0;
   }
-
   function handleSubmit(event) {
     event.preventDefault();
-    Axios.post("http://localhost:3001/signup", {
+    Sign.post("/signup", {
        firstname: firstname,
        lastname:lastname,
        email:email,
