@@ -1,0 +1,38 @@
+.row-1{
+  border:solid 1px black;
+
+}
+
+.col-1{
+    background-color: gainsboro;
+    padding:5em 0em 5em;
+    height: 100vh;
+}
+.col-1-info{
+    background-color: white;
+    border-radius: 0.3em;
+    padding:0.4em;
+    margin-bottom: 1.5em;
+}
+
+.col-1-heading{
+  
+}
+
+.col-2{
+    height: 100vh;
+}
+
+.name{
+  margin-top:1em;
+  font-size: 3em;
+}
+
+.username-password{
+ font-weight: bold;
+}
+
+.up-info{
+  font-weight: lighter;
+ 
+}
